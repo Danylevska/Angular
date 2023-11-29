@@ -1,0 +1,20 @@
+.users{width: 100%;
+margin: auto;
+display: flex;
+flex-wrap: wrap;
+gap: 10px}
+
+h1{margin-left: 5px;}
+
+input{margin-left: 5px;
+margin-bottom: 20px;}
+
+button{margin-left: 10px;
+color:#452803;
+background-color: #edcca2;
+}
+
+input, button{font-size: 16px;
+padding: 5px 10px;
+border-radius: 7px;
+border: 1px solid #ed8d10;}

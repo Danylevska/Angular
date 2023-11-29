@@ -1,0 +1,33 @@
+<h1>Users</h1>
+
+<input type="text" [value]="searchValue" (input)="onInput($event)" placeholder="Search..."/>
+<!-- <button (click)="onSortClick()">Sort</button> -->
+
+<button *ngIf="!isSorted" (click)="onSortClick()">Alphabet sort</button>
+
+<button *ngIf="isSorted" (click)="onSortClick()">Reversed Sort</button>
+
+
+<div class="users">
+<!-- <div class="user-item" *ngFor="let user of users"> -->
+    <!-- <app-user  *ngFor="let user of searchValue ? usersService.searchResult : usersService.users" [user]="user"></app-user> -->
+    <app-user
+
+  *ngFor="let user of searchValue
+   ? usersService.searchResult
+   
+     : usersService.sortedUsers"
+
+  [user]="user"
+
+></app-user>
+    <!-- <app-user  *ngFor="let user of searchValue ? usersService.searchResult : usersService.sortedUsers" [user]="user"></app-user> -->
+    <!-- <p>{{user.name}}</p>
+    <p>{{user.age}}</p>
+    
+    <div *ngFor="let location of user.locations">
+
+        <p>{{location.title}}</p> -->
+    <!-- </div> -->
+<!-- </div> -->
+</div>

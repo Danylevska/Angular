@@ -1,0 +1,26 @@
+.user-item{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ed8d10;
+    padding: 0px 10px 10px;
+    margin: 5px;
+    width: 320px;
+    border-radius: 10px;
+   font-size: 17px;
+  
+   
+}
+
+button{
+    border-radius: 5px;
+    border: 1px solid #ed8d10;
+    background-color:  #edcca2;
+    font-size: 16px;
+    padding: 3px 0;
+    margin-top: 30px;
+}
+
+.bold{
+    font-weight: 700;
+    font-size: 18px;
+}
